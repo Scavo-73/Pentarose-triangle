@@ -1,0 +1,90 @@
+.triangle {
+  margin: 0 auto;
+  transform: scale(0.4, 0.4);
+  height: 50rem;
+}
+
+.left {
+  width: 14rem;
+  height: 50rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(30deg);
+  z-index: -3;
+}
+
+.left div {
+  transform: rotate(30deg) skew(30deg);
+  background: #006495;
+  width: 10rem;
+  height: 50rem;
+}
+
+.left div::after {
+  content: "";
+  background: #006495;
+  width: 37rem;
+  height: 10rem;
+  position: absolute;
+  right: -36.5rem;
+}
+
+.right {
+  width: 14rem;
+  height: 50rem;
+  transform: rotate(-30deg);
+  position: absolute;
+  left: 31.3rem;
+  top: -6rem;
+  z-index: -1;
+}
+
+.right div {
+  transform: rotate(30deg) skew(30deg);
+  background: #0093d1;
+  width: 10rem;
+  height: 50rem;
+  position: absolute;
+}
+
+.right div::after {
+  content: "";
+  background: #0093d1;
+  width: 36.2rem;
+  height: 10rem;
+  position: absolute;
+  right: 10rem;
+  bottom: 0;
+  transform: skew(-180deg);
+}
+
+.buttom {
+  width: 14rem;
+  height: 50rem;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 21.4rem;
+  top: 25rem;
+}
+
+.bottom div {
+  transform: rotate(120deg) skew(30deg);
+  background: #004c70;
+  width: 10rem;
+  height: 50rem;
+  position: absolute;
+  right: 20.3rem;
+  bottom: -24.2rem;
+}
+
+.bottom div::after {
+  content: "";
+  background: #004c70;
+  width: 46.2rem;
+  height: 10rem;
+  position: absolute;
+  right: 0;
+  top: 40rem;
+  transform: skew(30deg);
+}
